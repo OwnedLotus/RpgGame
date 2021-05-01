@@ -18,7 +18,7 @@ public class WizardCreater
   public void FireBall()
   {
     int damage = 3;
-    System.out.println(name + " casts spell FireBall. It does: " + damage + " Damage!");
+    DamageStatement(name, "FireBall", damage);
     mp = mp - 2;
     exp = exp + 100;
   }
@@ -26,7 +26,7 @@ public class WizardCreater
   public void Avalanche()
   {
     int damage = 5;
-    System.out.println(name + " casts spell Avalanche. It does: " + damage + " Damage!");
+    DamageStatement(name, "Avalanche", damage);
     mp = mp - 5;
     exp = exp + 500;
   }
@@ -51,6 +51,11 @@ public class WizardCreater
     System.out.println(age);
     System.out.println(exp);
     System.out.println(mp);
+  }
+
+  public void DamageStatement(String name, String move, int damage)
+  {
+    System.out.println(name + " casts spell " + move + ". It does: " + damage + " Damage!");
   }
 
 }

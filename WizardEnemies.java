@@ -35,8 +35,6 @@ public class WizardEnemies
 
   public String EnemyName(String Name)
   {
-
-
     name = Name;
     return name; 
   }
